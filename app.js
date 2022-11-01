@@ -7,7 +7,7 @@ const auth = firebase.auth();
 const whenSignedIn = document.getElementById('whenSignedIn');
 // const whenSignedOut = document.getElementById('whenSignedOut');
 const whenSignedOuttwo = document.getElementById('whenSignedOuttwo');
-const whenSignedIn2 = document.getElementById('whenSignedIn2');
+// const whenSignedIn2 = document.getElementById('whenSignedIn2');
 // const whenSignedIncoup = document.getElementById('container');
 
 
@@ -32,11 +32,11 @@ auth.onAuthStateChanged(user => {
     if (user) {
         // signed in
         whenSignedIn.hidden = false;
-        whenSignedIn2.hidden = false;
+       // whenSignedIn2.hidden = false;
         // whenSignedOut.hidden = true;
         whenSignedOuttwo.hidden = true;
 
-        userDetails.innerHTML = `<h3>Hello ${user.displayName}!</h3> <p>User ID: ${user.uid}</p> <img style='padding: 20px; border-radius: 50%;' src='${user.photoURL}'>`;
+        userDetails.innerHTML = `<h3>Hello ${user.displayName}!</h3> <img style='padding: 20px; border-radius: 50%;' src='${user.photoURL}'>`;
         
         container.classList.add("container")
         document.body.appendChild(container)
@@ -282,7 +282,7 @@ auth.onAuthStateChanged(user => {
     } else {
         // not signed in
         whenSignedIn.hidden = true;
-        whenSignedIn2.hidden = true;
+       // whenSignedIn2.hidden = true;
         // whenSignedOut.hidden = false;
         whenSignedOuttwo.hidden = false;
         userDetails.innerHTML = '';

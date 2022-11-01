@@ -11,7 +11,7 @@ body {
 .container {
   text-align: center;
   margin: auto;
-  width: 40%;
+  width: 80%;
   color: #181818;
   padding: 30px 0px 0px 0px;
 }
@@ -65,7 +65,29 @@ input {
   cursor: pointer;
   transition: transform 0.6s;
 }
+#signInBtn{
+  background-color: #548aff;
+  border: none;
+  padding: 8px 16px 8px 16px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.6s;
+}
 
+#signOutBtn{
+  background-color: #ff7474;
+  border: none;
+  color: white;
+  padding: 8px 16px 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.6s;
+}
 #button:hover{
   transform: translateY(-3px);
   background-color: rgb(224, 224, 224);
